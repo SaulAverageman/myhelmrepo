@@ -1,0 +1,117 @@
+apiVersion: v1
+entries:
+  jenkins:
+  - annotations:
+      category: Infrastructure
+    apiVersion: v2
+    appVersion: 2.361.4
+    created: "2022-12-01T13:28:23.1053326+05:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Jenkins is an open source Continuous Integration and Continuous Delivery
+      (CI/CD) server designed to automate the building, testing, and deploying of
+      any software project.
+    digest: cd6f516388e2cfd4b5b073d46f0db74e9663e8f4f72661a786de905157f4a94c
+    home: https://github.com/bitnami/charts/tree/main/bitnami/jenkins
+    icon: https://bitnami.com/assets/stacks/jenkins/img/jenkins-stack-220x234.png
+    keywords:
+    - jenkins
+    - ci
+    - cd
+    - http
+    - web
+    - application
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: jenkins
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/jenkins
+    - https://jenkins.io/
+    urls:
+    - jenkins-11.0.9.tgz
+    version: 11.0.9
+  tomcat:
+  - annotations:
+      category: ApplicationServer
+    apiVersion: v2
+    appVersion: 10.1.2
+    created: "2022-12-01T13:28:23.110082+05:30"
+    dependencies:
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: Apache Tomcat is an open-source web server designed to host and run
+      Java-based web applications. It is a lightweight server with a good performance
+      for applications running in production environments.
+    digest: 91aa2b8db9a1129dea50c1e729307102da23b0d3aec51539e06d5adf268419be
+    home: https://github.com/bitnami/charts/tree/main/bitnami/tomcat
+    icon: https://bitnami.com/assets/stacks/tomcat/img/tomcat-stack-220x234.png
+    keywords:
+    - tomcat
+    - java
+    - http
+    - web
+    - application server
+    - jsp
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: tomcat
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/tomcat
+    - http://tomcat.apache.org
+    urls:
+    - tomcat-10.5.4.tgz
+    version: 10.5.4
+  wordpress:
+  - annotations:
+      category: CMS
+    apiVersion: v2
+    appVersion: 6.1.1
+    created: "2022-12-01T13:28:23.1189067+05:30"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: b396d03cb46031ebc64ea8d910627479250922098af54e4ff9e91e3f6e24df7c
+    home: https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/containers/tree/main/bitnami/wordpress
+    - https://wordpress.org/
+    urls:
+    - wordpress-15.2.16.tgz
+    version: 15.2.16
+generated: "2022-12-01T13:28:23.1028718+05:30"
